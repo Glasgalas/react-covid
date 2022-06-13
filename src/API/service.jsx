@@ -1,12 +1,11 @@
 import axios from 'axios';
-import { key } from '../key/apiKey';
 
 const options = {
   method: 'GET',
   url: 'https://covid-193.p.rapidapi.com/',
   headers: {
     'X-RapidAPI-Host': 'covid-193.p.rapidapi.com',
-    'X-RapidAPI-Key': key,
+    'X-RapidAPI-Key': process.env.REACT_APP_KEY,
   },
 };
 
